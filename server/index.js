@@ -30,11 +30,11 @@ const server = app.listen(process.env.PORT, ()=>{
 
 const io = socket(server, {
     cors:{
-        origin:"http://localhost:3000",
+        origin:"http://chat.ziyameiramova.site",
         credentials:true
     }
 })
-
+// origin:"http://localhost:3000",
 
 global.onlineUsers = new Map()
 
